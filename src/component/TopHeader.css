@@ -1,0 +1,302 @@
+/* ===== Top Header Area ===== */
+
+.brand-text {
+    /* display: flex;
+    flex-direction: column; */
+    line-height: 1.25;
+    min-width: 0;
+}
+
+hr {
+    margin: 0px;
+
+}
+
+.brand-text h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.brand-text h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffb100;
+}
+
+.brand-text p {
+    margin: 2px 0 0;
+    font-size: 11px;
+    font-weight: 400;
+   
+    white-space: normal;
+}
+
+.navbar-transparent .brand-text h1,
+.navbar-transparent .brand-text p {
+   
+}
+
+
+
+
+.top-header-area {
+    background-color: #002147;
+    color: #fff;
+    font-size: 13px;
+    /* base font size */
+    padding: 6px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    /* keep in one line */
+    overflow-x: auto;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    transition: background 0.4s ease, border-color 0.4s ease;
+    position: relative;
+    z-index: 1032;
+}
+
+.top-header-area.topbar-transparent {
+    background: #002a5c !important;
+    background-color: #002a5c !important;
+    border: none !important;
+    border-bottom: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* .top-header-area.topbar-transparent a,
+.top-header-area.topbar-transparent span,
+.top-header-area.topbar-transparent i {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+} */
+
+.top-header-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* LEFT SIDE CONTACT LINKS */
+.top-header-left a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    /* smaller than default */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.top-header-left a:hover {
+    color: #ffffff;
+}
+
+.top-header-left i {
+    margin-right: 4px;
+    /* smaller spacing */
+    color: #FFC333;
+    font-size: 10px;
+    font-weight: 500;
+    /* smaller icon */
+}
+
+/* RIGHT SIDE BUTTONS */
+.top-header-right ul li button {
+    white-space: nowrap;
+    font-size: 11px;
+    /* keep slightly bigger */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* Desktop: increase button text */
+@media (min-width: 992px) {
+    .top-header-right ul li button {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .top-header-area {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .top-header-area ul {
+        gap: 10px;
+    }
+
+    .top-header-left a {
+        font-size: 9px;
+        /* smaller left text */
+    }
+
+    .top-header-left i {
+        font-size: 11px;
+        margin-right: 3px;
+    }
+
+    .top-header-right ul li button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-header-area {
+        font-size: 9px;
+        padding: 8px;
+    }
+
+    .top-header-area ul {
+        display: grid;
+        margin-top: 4px;
+    }
+
+    .top-header-left a {
+        margin-top: -10px;
+        font-size: 8px;
+        /* smallest left text */
+    }
+
+    .top-header-left i {
+        font-size: 10px;
+        margin-right: 2px;
+
+
+    }
+
+    .top-header-right ul li button {
+        font-size: 9px;
+    }
+}
+
+/* === Keep phone and email same size on mobile === */
+@media (max-width: 768px) {
+
+    .top-header-left a.phone,
+    .top-header-left a.email {
+        font-size: 14px !important;
+
+    }
+}
+
+@media (max-width: 576px) {
+
+    .top-header-left a.phone,
+    .top-header-left a.email {
+
+        font-size: 14px !important;
+    }
+}
+
+.flashy-notice {
+    background: rgb(255, 195, 51);
+    border-radius: 4px;
+    padding: 6px 16px;
+    font-weight: 600;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 12px rgba(255, 75, 43, 0.8);
+    color: #000;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 8px rgba(255, 75, 43, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 18px rgba(255, 75, 43, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 8px rgba(255, 75, 43, 0.6);
+    }
+}
+
+.notice-dropdown {
+    position: relative;
+}
+
+.notice-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    display: flex;
+    gap: 40px;
+    /* padding: 15px 30px; */
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 13px !important;
+}
+
+.notice-menu li a {
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.notice-menu li a:hover {
+    color: #d11f2e;
+}
+
+.top-header-area,
+.header-area,
+.navbar,
+.navbar-nav {
+    overflow: visible !important;
+}
+
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+
+    .top-header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 8px 10px;
+    }
+
+    /* LEFT SIDE STACK */
+    .top-header-left ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    /* HIDE SOCIAL ICON TEXT CLUTTER */
+    .top-header-left li a {
+        font-size: 12px;
+    }
+
+    /* RIGHT SIDE STACK */
+    .top-header-right ul {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    /* BUTTONS SMALL */
+    .top-header-right .btn {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    /* OPTIONAL: HIDE LESS IMPORTANT BUTTONS */
+    .top-header-right li:nth-child(2),
+    .top-header-right li:nth-child(3) {
+        display: none;
+        /* hides some buttons */
+    }
+}

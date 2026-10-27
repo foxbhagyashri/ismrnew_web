@@ -1,0 +1,114 @@
+/* ===== Counter Section ===== */
+.counter-section {
+  background-color: #f8f9fa;
+  padding: 44px 0;
+  overflow-x: hidden;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* ===== Single Counter Box ===== */
+.single-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.single-counter:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Icon Styling ===== */
+.counter-icon {
+  font-size: 36px;
+  color: #FFC333;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.single-counter:hover .counter-icon {
+  transform: scale(1.1);
+  color: #0b214a;
+}
+
+/* ===== Inline number + label ===== */
+.counter-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+/* ===== Number Styling ===== */
+.counter-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0b214a;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ===== Label Styling ===== */
+.counter-label {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ===== Responsive Styling ===== */
+@media (max-width: 992px) {
+  .counter-icon {
+    font-size: 32px;
+  }
+  .counter-number {
+    font-size: 1.4rem;
+  }
+  .counter-label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .counter-icon {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+  .counter-number {
+    font-size: 1.3rem;
+  }
+  .counter-label {
+    font-size: 12.5px;
+  }
+}
+
+/* ===== Horizontal Scroll (Mobile Only) ===== */
+@media (max-width: 768px) {
+  .counter-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* enable touch scroll */
+    gap: 16px;
+    padding: 10px 5px;
+  }
+
+  /* Hide scrollbar */
+  .counter-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Each counter should have fixed width to allow scroll */
+  .single-counter {
+    min-width: 150px;
+    flex: 0 0 auto;
+  }
+
+  /* Optional: center content alignment in scroll view */
+  .counter-section .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

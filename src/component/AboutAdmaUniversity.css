@@ -1,0 +1,218 @@
+/* ==========================================================================
+   AFFILIATIONS & ACCREDITATIONS (1-Line Connected Track Design)
+   Deep Navy (#0a2240), Radiant Gold (#ffc333), 100% Fit without Cutoff
+   ========================================================================== */
+
+.accreditation-timeline-section {
+  background: linear-gradient(180deg, #ffffff 0%, #fffbf2 100%);
+  padding: 75px 0 70px 0;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.accreditation-timeline-section .section-header {
+  margin-bottom: 30px;
+}
+
+/* 1-Line Connected Track Wrapper */
+.timeline-track-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 36px 0 24px 0;
+  overflow-x: visible; /* Fits all 8 items at 100% and 90% scale without scrollbar */
+}
+
+/* Continuous Horizontal Connecting Line (Centered through all 8 Badges from 1st to 8th) */
+.timeline-connecting-line {
+  position: absolute;
+  top: 95px; /* Perfectly centered with 118px circle + 36px padding */
+  left: calc(100% / 16); /* Centers on 1st node */
+  right: calc(100% / 16); /* Centers on 8th node */
+  height: 4.5px;
+  background: linear-gradient(90deg, #0a2240 0%, #ffc333 20%, #ffc333 80%, #0a2240 100%);
+  z-index: 1;
+  border-radius: 3px;
+}
+
+/* Nodes Row (8 items in 1 single line with 100% visibility) */
+.timeline-nodes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Individual Node */
+.timeline-node-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  padding: 0 2px;
+}
+
+.timeline-node-item:hover {
+  transform: translateY(-8px);
+}
+
+/* Outer Circular Badge - Balanced scale fitting all 8 without being hidden */
+.timeline-badge-outer {
+  width: 118px;
+  height: 118px;
+  min-width: 118px;
+  min-height: 118px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 4px solid #0a2240;
+  padding: 6px;
+  box-shadow: 0 10px 26px rgba(10, 34, 64, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.timeline-node-item:hover .timeline-badge-outer {
+  border-color: #ffc333;
+  box-shadow: 0 14px 34px rgba(255, 195, 51, 0.45);
+  transform: scale(1.08);
+}
+
+/* Inner Circle Ring with dashed accent */
+.timeline-badge-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px dashed rgba(255, 195, 51, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  transition: all 0.3s ease;
+}
+
+.timeline-node-item:hover .timeline-badge-inner {
+  border-color: #0a2240;
+  border-style: solid;
+}
+
+/* Logo inside circle */
+.timeline-node-logo {
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.timeline-node-item:hover .timeline-node-logo {
+  transform: scale(1.1);
+}
+
+/* Info below badge */
+.timeline-node-info {
+  margin-top: 18px;
+  width: 100%;
+}
+
+.timeline-node-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0a2240;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.timeline-node-item:hover .timeline-node-title {
+  color: #ff7a00;
+}
+
+.timeline-node-sub {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 1100px) {
+  .timeline-badge-outer {
+    width: 102px;
+    height: 102px;
+    min-width: 102px;
+    min-height: 102px;
+  }
+
+  .timeline-connecting-line {
+    top: 87px;
+  }
+
+  .timeline-node-logo {
+    max-width: 68px;
+    max-height: 68px;
+  }
+
+  .timeline-node-title {
+    font-size: 14.5px;
+  }
+
+  .timeline-node-sub {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .accreditation-timeline-section .section-title {
+    font-size: 1.85rem;
+  }
+
+  .timeline-track-wrapper {
+    overflow-x: auto;
+    padding: 20px 10px 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #ffc333 #f1f5f9;
+  }
+
+  .timeline-nodes-container {
+    min-width: 780px;
+    gap: 12px;
+  }
+
+  .timeline-connecting-line {
+    left: 48px;
+    right: 48px;
+    top: 65px;
+  }
+
+  .timeline-badge-outer {
+    width: 82px;
+    height: 82px;
+    min-width: 82px;
+    min-height: 82px;
+  }
+
+  .timeline-node-logo {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
