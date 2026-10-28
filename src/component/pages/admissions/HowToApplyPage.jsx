@@ -1358,15 +1358,19 @@ export default function HowToApply() {
                                 <h2>Important Dates for Admissions </h2>
                                 <p>
                                     Application fee: <strong>₹ 1100 /-</strong>{" "}
-                                    (Non-Refundable). Fee waiver for eligible categories
-                                    may apply. Payment can be made by clicking
+                                    (Non-Refundable). Payment can be made by clicking
                                     on this link.{" "}
-                                    <a
-                                        href="https://forms.easebuzz.in/register/ISMR_Pune/ISMR_30k_2026-2028"
-                                        target="_blank"
+                                    <button type="button" className="btn btn-sm" onClick={() => setShowModal(true)} style={{
+                                   
+                                    color: "rgb(44, 38, 38)",
+                                    fontWeight: 600,
+                                    fontSize: "18px",
+                                    marginTop: "20px",
+                                    marginBottom: "20px"
+                                }}
                                     >
                                         Click Here
-                                    </a>
+                                    </button>
                                 </p>
                                 <ul>
                                     {[
@@ -1392,7 +1396,7 @@ export default function HowToApply() {
                                     fontSize: "20px",
                                     marginTop: "20px",
                                     marginBottom: "20px"
-                                }}><strong>Apply Now </strong></button>
+                                }}>Online Registration Form </button>
 
                                 <p>Apply Now and Take the First Step Towards Your Successful Management Career!</p>
                             </div>

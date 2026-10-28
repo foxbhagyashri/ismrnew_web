@@ -143,6 +143,19 @@ const Howtoaplydownoadform = () => {
             {successMsg && (
                 <div className="alert alert-success mt-3">{successMsg}</div>
             )}
+            <input
+                type="text"
+                name="state"
+                value={form.state}
+                onChange={handleChange}
+                placeholder="State"
+                className="form-control mb-3 mt-2"
+            />
+            {errors.state && <small className="text-danger">{errors.state}</small>}
+
+            {successMsg && (
+                <div className="alert alert-success mt-3">{successMsg}</div>
+            )}
 
             <button
                 type="submit"

@@ -258,19 +258,19 @@ const Header = () => {
           Academics
         </a>
         <ul className={`dropdown-menu ${activeDropdown === 4 ? "show" : ""}`}>
-          <li>
+          {/* <li>
             <Link className="dropdown-item" to="/academics/programs-offered" onClick={handleDropdownItemClick}>
               Academics Overview
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link className="dropdown-item" to="/academics/programs" onClick={handleDropdownItemClick}>
               Programs & Duration
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link className="dropdown-item" to="/academics/mba-program" onClick={handleDropdownItemClick}>
-              MBA Program
+              MBA Program Details
             </Link>
           </li>
         </ul>
@@ -326,7 +326,7 @@ const Header = () => {
           }}
           aria-expanded={activeDropdown === 3}
         >
-          Life @ ISMR
+        Campus Life @ ISMR
         </a>
         <ul className={`dropdown-menu ${activeDropdown === 3 ? "show" : ""}`}>
           <li>
@@ -339,11 +339,11 @@ const Header = () => {
               Student Facilities
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className="dropdown-item" to="/campus-life/newsletter" onClick={handleDropdownItemClick}>
               Newsletters
             </Link>
-          </li>
+          </li> */}
         </ul>
       </li>
 
@@ -873,7 +873,7 @@ const Header = () => {
                 <span className="ttt">International School of</span><br></br>
                 <span className="ttt"> Management &amp; Research</span>
                 <p>
-                  (Approved by AICTE, Affiliated to Savitribai Phule Pune University (SPPU))
+                  (Approved by AICTE, Affiliated to Savitribai Phule Pune University) (SPPU)
                 </p>
                 <p>NAAC Accredited Institute</p>
               </div>

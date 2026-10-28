@@ -103,6 +103,20 @@ const TopHeader = () => {
                                 )}
                             </li> */}
 
+                            <li>
+                                <button
+                                 
+                                    className="btn btn-sm"
+                                    style={{
+                                        backgroundColor: "#ffc333",
+                                        color: "#2c2626ff",
+                                        fontWeight: "600",
+                                    }}
+                                >
+                                    Career @ ISMR
+                                </button>
+                            </li>
+
 
                             <li>
                                 <button
@@ -117,7 +131,7 @@ const TopHeader = () => {
                                         fontWeight: "600",
                                     }}
                                 >
-                                    Apply For MAH – CET
+                                    Apply for MH-CET Exam
                                 </button>
                             </li>
 
@@ -148,7 +162,7 @@ const TopHeader = () => {
                                         fontWeight: "600",
                                     }}
                                 >
-                                    Apply for MBA
+                                    Registration Form
                                 </button>
                             </li>
 

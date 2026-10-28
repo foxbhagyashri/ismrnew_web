@@ -18,14 +18,14 @@ const images = [
 const bottomSlides = [
     { white: "Students Ready ", yellow: "for Classes" },
     { white: "Academic Award ", yellow: "Distribution" },
-    { white: "Bus Facility ", yellow: "for Students" },
+   
     { white: "Ganpati Celebration ", yellow: "@ Campus" },
     { white: "Independance Day ", yellow: "Celebration" },
     { white: "Industrial Visit ", yellow: "@ E T N" },
     { white: "Industrial Visit", yellow: "@ Renishaw" },
     { white: "Industrial Visit", yellow: "To Mapro" },
     { white: "Industry Visit @ National", yellow: "Paints Abu Dhabi" },
-    { white: "Sports ", yellow: "Activity" },
+   
     { white: "Students @ Burj Al Arab ", yellow: "Beach Dubai " },
 ];
 

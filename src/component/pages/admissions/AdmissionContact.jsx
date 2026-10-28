@@ -419,7 +419,18 @@ export default function AdmissionContact() {
               )}
 
 
+ <input
+                type="text"
+                name="state"
+                value={form.state}
+                onChange={handleChange}
+                placeholder="State"
+                className="form-control mb-3"
+              />
 
+              {errors.state && (
+                <small className="text-danger">{errors.state}</small>
+              )}
 
 
               <button
