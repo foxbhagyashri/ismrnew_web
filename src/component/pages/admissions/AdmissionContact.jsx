@@ -294,14 +294,14 @@ export default function AdmissionContact() {
                 >
                   Call{" "}
                   <a
-                    href="tel:9923786079"
+                    href="tel:9158000595"
                     style={{
                       color: "#d95c5c",
                       textDecoration: "none",
                       fontWeight: "600",
                     }}
                   >
-                    9923786079
+                    9158000595
                   </a>{" "}
                   for urgent admissions help.
                 </p>

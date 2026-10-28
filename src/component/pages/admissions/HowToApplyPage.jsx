@@ -722,7 +722,7 @@ export default function HowToApply() {
                                             title: "3. Admission Letter & Seat Confirmation",
                                             desc: (
                                                 <>
-                                                    <p>
+                                                    <p style={{ textAlign: "justify" }}>
                                                         After successfully completing the telephonic
                                                         interview, shortlisted candidates will receive their
                                                         Admission Letter via email from the ISMR Pune
@@ -730,7 +730,7 @@ export default function HowToApply() {
                                                         relevant admission details and instructions for
                                                         confirming their admission.
                                                     </p>
-                                                    <p>
+                                                    <p style={{ textAlign: "justify" }}>
                                                         To secure your seat at ISMR Pune, candidates are
                                                         required to pay a seat confirmation fee of
                                                         ₹30,000/- within three days of receiving the
@@ -738,7 +738,7 @@ export default function HowToApply() {
                                                         confirm your admission and proceed with the
                                                         subsequent admission formalities.
                                                     </p>
-                                                    <p>
+                                                    <p style={{ textAlign: "justify" }}>
                                                         Candidates are requested to complete the seat
                                                         booking process through the official payment link
                                                         provided below and retain the payment receipt for
@@ -773,7 +773,7 @@ export default function HowToApply() {
                                     ].map((step, index) => (
                                         <div key={index} className="step">
                                             <h3>{step.title}</h3>
-                                            {typeof step.desc === "string" ? <p>{step.desc}</p> : step.desc}
+                                            {typeof step.desc === "string" ? <p style={{ textAlign: "justify" }}>{step.desc}</p> : step.desc}
                                         </div>
                                     ))}
                                 </div>

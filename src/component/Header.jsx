@@ -237,7 +237,7 @@ const Header = () => {
           </li>
           <li>
             <Link className="dropdown-item" to="/admissions/required-documents" onClick={handleDropdownItemClick}>
-              List Of Documents
+              Required Documents
             </Link>
           </li>
         </ul>
