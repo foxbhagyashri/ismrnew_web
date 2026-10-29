@@ -1470,54 +1470,7 @@ export default function HowToApply() {
       )} */}
 
             {/* -------- FORM MODAL -------- */}
-            {
-                showModal && (
-                    <div
-                        className="modal-backdrop"
-                        style={{
-                            position: "fixed",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            backgroundColor: "rgba(0,0,0,0.6)",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            zIndex: 9999,
-                        }}
-                    >
-                        <div
-                            className="modal-content rounded-3 p-4"
-                            style={{
-                                backgroundColor: "#fff",
-                                maxWidth: "500px",
-                                width: "90%",
-                            }}
-                        >
-                            <h4 style={{ color: "#0a2240", marginBottom: "1rem" }}>
-                                Fill the form to download brochure
-                            </h4>
-
-                            <Howtoaplydownoadform />
-
-                            <button
-                                onClick={() => setShowModal(false)}
-                                style={{
-                                    marginTop: "10px",
-                                    background: "transparent",
-                                    border: "none",
-                                    color: "#d95c5c",
-                                    cursor: "pointer",
-                                }}
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                )
-            }
-
+           
 
         </section >
     );
