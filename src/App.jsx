@@ -14,6 +14,7 @@ import Sticky from "./component/Sticky";
 import ScrollToTop from "./component/ScrollToTop";
 import SEO from "./component/SEO";
 import MbaTabsSection from "./component/Mbatabssection";
+import Careers from "./component/Careers"
 // Home Page Sections
 import Banner from "./component/Banner";
 import Banner2 from "./component/Banner2";
@@ -172,6 +173,7 @@ function App() {
                 <Route path="/about-us/leadership-team/treasurer-message" element={<TreasurerMessage />} />
                 <Route path="/about-us/why-ismr" element={<WhyIsmr />} />
                 <Route path="/about-us/awards-and-rankings" element={<AwardsAndRankings />} />
+                   <Route path="/Careers" element={<Careers />} />
 
                 {/* 2. Admissions */}
                 <Route path="/admissions/eligibility-criteria" element={<EligibilityCriteria />} />
