@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ISMRFormModal from "./forms/ISMRFormModal";
 import Howtoaplydownoadform from "./forms/HowToApplyDownloadForm";
 import brochurePdf from "/ISMR Brochure.pdf";
+import { Link, useLocation } from "react-router-dom";
 
 const css = `
   .mba-tabs {
@@ -136,9 +137,9 @@ export default function MbaTabsSection() {
         <style>{css}</style>
 
         <nav className="mba-tabs__list">
-          <a className="mba-tabs__item" href="/academics/mba-program">
+          <Link className="mba-tabs__item" to="/academics/mba-program">
             MBA Program Features
-          </a>
+          </Link>
 
           <button
             type="button"
